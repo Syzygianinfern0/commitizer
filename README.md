@@ -1,2 +1,2 @@
 # commitizer
-🚧 Generate patterns and keep your GitHub contribution going 
+🚧 Generate patterns and keep your GitHub contribution going
