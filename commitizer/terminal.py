@@ -30,4 +30,4 @@ class Terminal:
 
     def __del__(self):
         self.repo.git.checkout(self.original_branch)
-        self.repo.git.pop('Terminal Constructor')
+        self.repo.git.stash('pop')

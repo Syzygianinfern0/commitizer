@@ -1,4 +1,4 @@
-from commitizer.terminal import Terminal
+from terminal import Terminal
 
 COMMIT_CMD = 'git commit --date="{}" --allow-empty -m "{}" '
 
