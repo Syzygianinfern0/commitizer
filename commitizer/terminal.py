@@ -2,8 +2,8 @@ import os
 
 
 class Terminal:
-    def __init__(self):
-        pass
+    def __init__(self, branch='gh-pages'):
+        self.execute(f'git checkout {branch}')
 
     @staticmethod
     def execute(command: str):
