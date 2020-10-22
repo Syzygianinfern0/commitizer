@@ -3,7 +3,7 @@ import datetime
 import os
 import random
 
-from looper import dates_between
+from commitizer.looper import dates_between
 
 
 # noinspection PyShadowingNames
