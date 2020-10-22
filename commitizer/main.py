@@ -1,8 +1,9 @@
-from terminal import Terminal
+import os
 
-COMMIT_CMD = 'git commit --date="{}" --allow-empty -m "{}" '
+
+def main():
+    os.system('git commit --date="22/06/2012" --allow-empty -m "Fake Commit"')
+
 
 if __name__ == '__main__':
-    terminal_instance = Terminal()
-    # for _ in range(5):
-    #     terminal_instance.execute(COMMIT_CMD.format('10 years ago', 'fake commit'))
+    main()
