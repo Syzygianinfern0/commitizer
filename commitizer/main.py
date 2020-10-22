@@ -1,8 +1,10 @@
-import os
+from commitizer.looper import dates_between
 
 
 def main():
-    os.system('git commit --date="23-06-2012" --allow-empty -m "Fake Commit"')
+    for date in dates_between():
+        # os.system(f'git commit --date="{date}" --allow-empty -m "Fake Commit"')
+        print(f'git commit --date="{date}" --allow-empty -m "Fake Commit"')
 
 
 if __name__ == '__main__':

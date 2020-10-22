@@ -2,7 +2,7 @@ from datetime import date
 from datetime import timedelta
 
 
-def dates_between(start_date=date(2008, 8, 15), end_date=date(2008, 9, 15)):
+def dates_between(start_date=date(2008, 8, 15), end_date=date(2008, 8, 17)):
     # date(yyyy, (m)m, (d)d)
     delta = end_date - start_date  # as timedelta
 
