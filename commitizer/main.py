@@ -13,6 +13,10 @@ def main(start_date, end_date, number):
             os.system(f'git commit --date="{date}" --allow-empty -m "Fake Commit"')
 
 
+def str2date(str_date):
+    return datetime.datetime.strptime(str_date, '%d/%m/%Y')
+
+
 if __name__ == '__main__':
     my_parser = argparse.ArgumentParser()
     my_parser.add_argument('-s', '--start-date', type=str, default='18/08/2008')
@@ -21,6 +25,7 @@ if __name__ == '__main__':
 
     args = my_parser.parse_args()
 
-    start_date = datetime.datetime.strptime(args.start_date, '%d/%m/%Y')
-    end_date = datetime.datetime.strptime(args.end_date, '%d/%m/%Y')
+    start_date = str2date(args.start_date)
+    end_date = str2date(args.end_date)
+
     main(start_date, end_date, args.number)
