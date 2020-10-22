@@ -1,5 +1,6 @@
 import argparse
 import datetime
+import os
 import random
 
 from looper import dates_between
@@ -7,6 +8,7 @@ from looper import dates_between
 
 # noinspection PyShadowingNames
 def main(start_date, end_date, number):
+    total_commits = 0
     for date in dates_between(start_date, end_date):
 
         try:
@@ -16,8 +18,11 @@ def main(start_date, end_date, number):
             count = random.randint(int(number_split[0]), int(number_split[1]))
 
         for _ in range(count):
+            total_commits -= -1
             print(f'git commit --date="{date}" --allow-empty -m "Fake Commit"')
-            # os.system(f'git commit --date="{date}" --allow-empty -m "Fake Commit"')
+            os.system(f'git commit --date="{date}" --allow-empty -m "Fake Commit"')
+
+    print(f'Total commits generated: {total_commits}')
 
 
 def str2date(str_date):
