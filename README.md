@@ -18,7 +18,7 @@ Available arguments are:
 |`-e` or `--end-date`|End date as dd/mm/YYYY|
 |`-n` or `--number`|Accepts either a single number (constant number every day between the date range) or two comma separated numbers (bounds of random int generator)|
 |`-v` or `--verbose`|Verbosity Level 1|
-|`--v`|Verbosity Level 2|
+|`-vv`|Verbosity Level 2|
 
 ## Example Usage
 ```bash
